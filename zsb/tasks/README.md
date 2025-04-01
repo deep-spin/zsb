@@ -1,4 +1,4 @@
-# Creating a new ZSB
+# Creating a new Zero-shot Benchmark
 To create a new task for benchmarking, you must create a file where a task class is defined, and import it in `__init__.py`.
 
 The task class requires creating a **meta prompt** for data generation, a **judgement prompt** (DA, relative, or both) for evaluation, and parsing functions.

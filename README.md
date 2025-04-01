@@ -20,7 +20,7 @@ poetry install
 > Tested with python==3.10 and poetry==1.6.1
 
 ## Run an existing benchmark
-We provide benchmarks for general capabilities on 4 languages (English, French, Chinese, and Korean), translation, and vision language general capabilities in English (check the [data](https://github.com/deep-spin/zsb/data) folder).
+We provide benchmarks for general capabilities on 4 languages (English, French, Chinese, and Korean), translation, and vision language general capabilities in English (check the [data](https://github.com/deep-spin/zsb/tree/main/data) folder).
 All models supported in [litellm](https://github.com/BerriAI/litellm) (e.g., Open AI, Anthropic, Together) or [vllm](https://github.com/vllm-project/vllm) (e.g., most HF models) can be used for data creation, response generation, and evaluation.
 
 For example, to get responses from `google/gemma-2-9b-it` for our English general capabilities benchmark, run:
@@ -54,7 +54,7 @@ python zsb/tasks/list.py
 
 ### With a new task
 
-Check out our guide to create new tasks under the [tasks](https://github.com/deep-spin/zsb/zsb/tasks) folder.
+Check out our guide to create new tasks under the [tasks](https://github.com/deep-spin/zsb/tree/main/zsb/tasks) folder.
 
 ## Cite our work
 
