@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "zsb"
+version = "0.1.0"
+description = "Zero-shot Benchmarking: A Framework for Flexible and Scalable Automatic Evaluation of Language Modelspip "
+authors = [
+    "José Pombal <jose.pombal@unbabel.com>"
+    ]
+maintainers = [
+    "José Pombal <jose.pombal@unbabel.com>"
+    ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9.0,<3.13"
+vllm = "^0.6.4"
+jupyter = "^1.1.1"
+jsonargparse = "^4.34.1"
+tenacity = "^9.0.0"
+scikit-learn = "^1.6.0"
+litellm = "^1.59.8"
+seaborn = "^0.13.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

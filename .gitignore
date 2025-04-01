@@ -1,0 +1,7 @@
+venv*
+__pycache__
+.vscode
+experiments
+other_tasks
+arena-hard-auto
+mt-metrics-eval
