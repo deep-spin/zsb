@@ -1,6 +1,6 @@
 # Zero-shot Benchmarking
 This repository provides tools to easily create benchmarks and run automatic evaluation for language modelling tasks across domains and modalities using language models end-to-end. 
-Check out our [paper]().
+Check out our [paper](https://arxiv.org/abs/2504.01001).
 
 - [Installation](#installation)
 - [Run an existing benchmark](#run-an-existing-benchmark)
@@ -59,4 +59,13 @@ Check out our guide to create new tasks under the [tasks](https://github.com/dee
 ## Cite our work
 
 ```bibtex
+@misc{pombal2025zeroshotbenchmarkingframeworkflexible,
+      title={Zero-shot Benchmarking: A Framework for Flexible and Scalable Automatic Evaluation of Language Models}, 
+      author={José Pombal and Nuno M. Guerreiro and Ricardo Rei and André F. T. Martins},
+      year={2025},
+      eprint={2504.01001},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2504.01001}, 
+}
 ```
