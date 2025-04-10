@@ -37,6 +37,10 @@ from zsb.tasks.multilingual_general_purpose_chat_topic_only import (
 from zsb.tasks.multilingual_general_purpose_chat_topic_subtopic import (
     GeneralPurposeChatEnglishTopicSubtopic,
 )
+from zsb.tasks.multilingual_vlm_general_purpose_chat import (
+    MVLMGeneralPurposeChatChinese,
+    MVLMGeneralPurposeChatPortuguese,
+)
 from zsb.tasks.transcreation import TranscreationEN_PTPT
 from zsb.tasks.translation_w_hard_rules import TranslationWHardRules_EN_PTPT
 from zsb.tasks.vlm_general_purpose_chat import VLMGeneralPurposeChatEnglish
@@ -72,6 +76,8 @@ available_tasks: dict[str, Task] = {
     GeneralTranslationEN_IS().name: GeneralTranslationEN_IS(),
     TranslationWHardRules_EN_PTPT().name: TranslationWHardRules_EN_PTPT(),
     VLMGeneralPurposeChatEnglish().name: VLMGeneralPurposeChatEnglish(),
+    MVLMGeneralPurposeChatPortuguese().name: MVLMGeneralPurposeChatPortuguese(),
+    MVLMGeneralPurposeChatChinese().name: MVLMGeneralPurposeChatChinese(),
     # ablations for paper
     GeneralPurposeChatEnglishTopicOnly().name: GeneralPurposeChatEnglishTopicOnly(),
     GeneralPurposeChatEnglishTopicSubtopic().name: GeneralPurposeChatEnglishTopicSubtopic(),
