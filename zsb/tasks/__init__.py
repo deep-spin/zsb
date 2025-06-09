@@ -31,6 +31,18 @@ from zsb.tasks.multilingual_general_purpose_chat import (
     GeneralPurposeChatFrench,
     GeneralPurposeChatKorean,
 )
+from zsb.tasks.multilingual_general_purpose_chat_rubric_1 import (
+    GeneralPurposeChatChineseS_rubric_1,
+    GeneralPurposeChatEnglish_rubric_1,
+    GeneralPurposeChatFrench_rubric_1,
+    GeneralPurposeChatKorean_rubric_1,
+)
+from zsb.tasks.multilingual_general_purpose_chat_rubric_2 import (
+    GeneralPurposeChatChineseS_rubric_2,
+    GeneralPurposeChatEnglish_rubric_2,
+    GeneralPurposeChatFrench_rubric_2,
+    GeneralPurposeChatKorean_rubric_2,
+)
 from zsb.tasks.multilingual_general_purpose_chat_topic_only import (
     GeneralPurposeChatEnglishTopicOnly,
 )
@@ -42,7 +54,16 @@ from zsb.tasks.multilingual_vlm_general_purpose_chat import (
     MVLMGeneralPurposeChatPortuguese,
 )
 from zsb.tasks.transcreation import TranscreationEN_PTPT
-from zsb.tasks.translation_w_hard_rules import TranslationWHardRules_EN_PTPT
+from zsb.tasks.translation_w_hard_rules import (
+    TranslationWHardRules_EN_ESLA,
+    TranslationWHardRules_EN_PTPT,
+    TranslationWHardRules_EN_ZH,
+)
+from zsb.tasks.translation_w_hard_rules_rule_eval import (
+    TranslationWHardRulesRE_EN_ESLA,
+    TranslationWHardRulesRE_EN_PTPT,
+    TranslationWHardRulesRE_EN_ZH,
+)
 from zsb.tasks.vlm_general_purpose_chat import VLMGeneralPurposeChatEnglish
 
 available_tasks: dict[str, Task] = {
@@ -75,10 +96,24 @@ available_tasks: dict[str, Task] = {
     GeneralTranslationEN_JA().name: GeneralTranslationEN_JA(),
     GeneralTranslationEN_IS().name: GeneralTranslationEN_IS(),
     TranslationWHardRules_EN_PTPT().name: TranslationWHardRules_EN_PTPT(),
+    TranslationWHardRules_EN_ESLA().name: TranslationWHardRules_EN_ESLA(),
+    TranslationWHardRules_EN_ZH().name: TranslationWHardRules_EN_ZH(),
+    TranslationWHardRulesRE_EN_PTPT().name: TranslationWHardRulesRE_EN_PTPT(),
+    TranslationWHardRulesRE_EN_ESLA().name: TranslationWHardRulesRE_EN_ESLA(),
+    TranslationWHardRulesRE_EN_ZH().name: TranslationWHardRulesRE_EN_ZH(),
     VLMGeneralPurposeChatEnglish().name: VLMGeneralPurposeChatEnglish(),
     MVLMGeneralPurposeChatPortuguese().name: MVLMGeneralPurposeChatPortuguese(),
     MVLMGeneralPurposeChatChinese().name: MVLMGeneralPurposeChatChinese(),
     # ablations for paper
     GeneralPurposeChatEnglishTopicOnly().name: GeneralPurposeChatEnglishTopicOnly(),
     GeneralPurposeChatEnglishTopicSubtopic().name: GeneralPurposeChatEnglishTopicSubtopic(),
+    # ablations for reviews
+    GeneralPurposeChatEnglish_rubric_1().name: GeneralPurposeChatEnglish_rubric_1(),
+    GeneralPurposeChatEnglish_rubric_2().name: GeneralPurposeChatEnglish_rubric_2(),
+    GeneralPurposeChatChineseS_rubric_1().name: GeneralPurposeChatChineseS_rubric_1(),
+    GeneralPurposeChatChineseS_rubric_2().name: GeneralPurposeChatChineseS_rubric_2(),
+    GeneralPurposeChatFrench_rubric_1().name: GeneralPurposeChatFrench_rubric_1(),
+    GeneralPurposeChatFrench_rubric_2().name: GeneralPurposeChatFrench_rubric_2(),
+    GeneralPurposeChatKorean_rubric_1().name: GeneralPurposeChatKorean_rubric_1(),
+    GeneralPurposeChatKorean_rubric_2().name: GeneralPurposeChatKorean_rubric_2(),
 }
